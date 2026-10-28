@@ -552,7 +552,7 @@ def main():
     
     # Kør igennem bræt 1 til 74 eller vælg et specifikt bræt
     for board_idx in range(1, 75):
-        img_path = f"King Domino dataset/Cropped and perspective corrected boards/{board_idx}.jpg"
+        img_path = f"Boards/{board_idx}.jpg"
         img = cv2.imread(img_path)
 
         if img is None:
