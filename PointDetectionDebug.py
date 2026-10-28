@@ -212,7 +212,7 @@ def finalFold(img, restXY, spawnCut):
     tillArr = imageToTiles(img, len(img), len(img[0]))
     wastelandTraining = []
     for i in range(1, 5):
-        path = f"SoerenViggo/Wasteland_Training/WasteLand{i}.png"
+        path = f"Wasteland_Training/WasteLand{i}.png"
         img2 = cv2.imread(path)
         if img2 is not None:
             wastelandTraining.append(img2)
@@ -548,7 +548,7 @@ def calculate_score(img, terrain_grid, crowns):
 
 # Main-funktion til at køre hele processen for hvert bræt i dataset
 def main():
-    tmpl_bgr = cv2.imread('SoerenViggo/crown_sharp.png')
+    tmpl_bgr = cv2.imread('crown_sharp.png')
     
     # Kør igennem bræt 1 til 74 eller vælg et specifikt bræt
     for board_idx in range(1, 75):
